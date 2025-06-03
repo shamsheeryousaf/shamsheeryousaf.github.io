@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. A trial</p>
+<h1 id="greeting">Hello World</h1>
+<script>
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const today = new Date().getDay();
+document.getElementById('greeting').textContent = `Hello World, It's a ${days[today]}`;
+</script>
 </body>
 </html>
